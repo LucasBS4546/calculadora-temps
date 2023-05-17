@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CONVERTA TEMP HAHAHAHHA</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <input type="radio" name="escala" id="celsius" value="celsius" checked>
+                <label for="celsius">ºC</label>
+                <input type="radio" name="escala" id="farenheit" value="farenheit">
+                <label for="farenheit">ºF</label>
+                <input type="radio" name="escala" id="kelvin" value="kelvin">
+                <label for="kelvin">K</label>
+            </fieldset>
+    
+            <input id="temperatura" type="number" placeholder="Digite a temperatura">
+    
+            <input id="temp2" type="range">
+    
+            <input type="button" value="Converter" onclick="converterTemperaturas()">
+        </form>
+
+        <section id="valores">
+            <div>
+                <h3>Temperatura <br> em Celsius</h3>
+                <div id="valor_celsius"></div>
+            </div>
+            <div>
+                <h3>Temperatura <br> em Farenheit</h3>
+                <div id="valor_farenheit"></div>
+            </div>
+            <div>
+                <h3>Temperatura <br> em Kelvin</h3>
+                <div id="valor_kelvin"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
