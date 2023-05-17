@@ -26,4 +26,10 @@ function converterTemperaturas () {
    document.getElementById('valor_celsius').innerText = temp_celsius + 'ºC';
    document.getElementById('valor_farenheit').innerText = temp_farenheit + 'ºF';
    document.getElementById('valor_kelvin').innerText = temp_kelvin;
+
+   return temp_kelvin
+}
+
+function banana ( ) {
+    temp_kelvin = converterTemperaturas()
 }
