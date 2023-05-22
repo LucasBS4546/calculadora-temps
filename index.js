@@ -26,10 +26,31 @@ function converterTemperaturas () {
    document.getElementById('valor_celsius').innerText = temp_celsius + 'ºC';
    document.getElementById('valor_farenheit').innerText = temp_farenheit + 'ºF';
    document.getElementById('valor_kelvin').innerText = temp_kelvin;
-
-   return temp_kelvin
 }
 
-function banana ( ) {
-    temp_kelvin = converterTemperaturas()
+function MostrarValor() {
+    var elemento = document.getElementById('temp2')
+    var valor = document.getElementById('temp2').value
+    var texto = document.getElementById('temperatura')
+    texto.value = valor
+
+    converterTemperaturas ()
+
+    var red = 65;
+    var green = 245;
+    var blue = 65;
+    var alpha = 1;
+
+    document.getElementById('corpo').style.backgroundColor = `rgba(${red + valor}, ${green - valor}, ${blue}, ${alpha})`;
+
+    if (valor < '0') {
+        var valor = document.getElementById('temp2').value
+
+        var red = 236;
+        var green = 245;
+        var blue = 65;
+        var alpha = 1;
+        
+        document.getElementById('corpo').style.backgroundColor = `rgba(${red - (-valor)}, ${green}, ${blue - valor}, ${alpha})`;
+    }
 }
