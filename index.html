@@ -19,7 +19,7 @@
                 <label for="kelvin">K</label>
             </fieldset>
     
-            <input id="temperatura" type="number" placeholder="Digite a temperatura">
+            <input id="temperatura" type="number" placeholder="Digite a temperatura" value="0">
     
             <input id="temp2" type="range" oninput="MostrarValor()" min="-273" max="273">
     
@@ -29,15 +29,15 @@
         <section id="valores">
             <div>
                 <h3>Temperatura <br> em Celsius</h3>
-                <div id="valor_celsius"></div>
+                <div id="valor_celsius">0°C</div>
             </div>
             <div>
                 <h3>Temperatura <br> em Farenheit</h3>
-                <div id="valor_farenheit"></div>
+                <div id="valor_farenheit">32.00ºF</div>
             </div>
             <div>
                 <h3>Temperatura <br> em Kelvin</h3>
-                <div id="valor_kelvin"></div>
+                <div id="valor_kelvin">273</div>
             </div>
         </section>
     </main>
