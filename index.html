@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>CONVERTA TEMP HAHAHAHHA</title>
 </head>
-<body>
+<body id="corpo">
     <main>
         <form action="">
             <fieldset>
@@ -21,7 +21,7 @@
     
             <input id="temperatura" type="number" placeholder="Digite a temperatura">
     
-            <input id="temp2" type="range">
+            <input id="temp2" type="range" oninput="MostrarValor()" min="-273" max="273">
     
             <input type="button" value="Converter" onclick="converterTemperaturas()">
         </form>
