@@ -54,3 +54,9 @@ function MostrarValor() {
         document.getElementById('corpo').style.backgroundColor = `rgba(${red - (-valor)}, ${green}, ${blue - valor}, ${alpha})`;
     }
 }
+
+function mudarRange() {
+    var elemento = document.getElementById('temp2')
+    var valor = document.getElementById('temperatura').value
+    elemento.value = valor
+}
